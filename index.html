@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app='ProductsApp'>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styleguide.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Products App</title>
+  </head>
+  <body class="styleguide responsive">
+
+    <ui-view></ui-view>
+
+    <!-- Libraries -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+    <!-- Modules -->
+    <script src="src/app/productsapp.module.js"></script>
+    <script src="src/data/data.module.js"></script>
+
+    <!-- Routes -->
+    <script src="src/routes.js"></script>
+
+    <!-- 'ProductsApp' module artifacts -->
+    <script src="src/app/products.component.js"></script>
+    <script src="src/app/productsfilters.component.js"></script>
+    <script src="src/app/productslist.controller.js"></script>
+
+    <!-- 'Data' module artifacts -->
+    <script src="src/data/appdata.service.js"></script>
+
+  </body>
+</html>

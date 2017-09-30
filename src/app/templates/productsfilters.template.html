@@ -1,0 +1,17 @@
+<div class="row--responsive layout-a">
+  <div class="column--responsive column">
+    <form class="yform u-space-t5 island--blue">
+      <ul class="arrange arrange--12 arrange--wrap arrange--2-units arrange--middle">
+        <li ng-repeat="filter in $ctrl.filters.filters" class="arrange_unit">
+          <label>
+            {{filter.filterValues[0].Type}}:
+          </label>
+          <select ng-model="filter.filterSelected"
+            ng-options="value as value.DisplayText for value in filter.filterValues track by value.Value"
+            ng-change="$ctrl.filters.filterFunc()">
+          </select>
+        </li>
+      </ul>
+    </form>
+  </div>
+</div>

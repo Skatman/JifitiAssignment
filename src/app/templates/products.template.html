@@ -1,0 +1,22 @@
+<div ng-repeat="product in $ctrl.products" ng-if="$index % 3 == 0" class=" u-space-t5 row--responsive layout-a clearfix">
+    <div class="column--responsive column column-beta u-text-centered">
+      <img ng-src={{$ctrl.products[$index].ProductImage}} class="arrange_unit--fill">
+      <h3 class="alternate u-space-t2">{{$ctrl.products[$index].ProductStore}}</h3>
+      <h3>{{$ctrl.products[$index].PriceLabel}}</h3>
+      <h4 class="u-text-truncate">{{$ctrl.products[$index].ProductTitle}}</h4>
+    </div>
+
+    <div class="column--responsive column column-beta u-text-centered">
+      <img ng-src={{$ctrl.products[$index+1].ProductImage}} class="arrange_unit--fill">
+      <h3 class="alternate u-space-t2">{{$ctrl.products[$index+1].ProductStore}}</h3>
+      <h3>{{$ctrl.products[$index+1].PriceLabel}}</h3>
+      <h4 class="u-text-truncate">{{$ctrl.products[$index+1].ProductTitle}}</h4>
+    </div>
+
+    <div class="column--responsive column column-beta u-text-centered">
+      <img ng-src={{$ctrl.products[$index+1].ProductImage}} class="arrange_unit--fill">
+      <h3 class="alternate u-space-t2">{{$ctrl.products[$index+2].ProductStore}}</h3>
+      <h3>{{$ctrl.products[$index+2].PriceLabel}}</h3>
+      <h4 class="u-text-truncate">{{$ctrl.products[$index+2].ProductTitle}}</h4>
+    </div>
+</div>
