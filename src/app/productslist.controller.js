@@ -7,7 +7,6 @@ angular.module('ProductsApp')
 
 ProductsListController.$inject = ['AppDataService', 'data'];
 function ProductsListController(AppDataService, data) {
-  console.log(data);
   var productsList = this;
   productsList.products = [];
   productsList.filteredProducts = [];
@@ -33,7 +32,6 @@ function ProductsListController(AppDataService, data) {
     ],
 
     filterFunc: function(){
-      console.log(productsList.filters);
       var filterTags = [];
       this.filters.forEach(function(item){
         if (item.filterSelected.TagId !== undefined){

@@ -2,6 +2,6 @@
 'use strict';
 
 angular.module('Data', [])
-.constant('ApiBasePath', '/src/data');
+.constant('ApiBasePath', 'src/data');
 
 })();
